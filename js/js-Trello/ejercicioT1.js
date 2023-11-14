@@ -23,11 +23,11 @@ function calcularInventario() {
 }
 
 function mostrarProductos(cadena) {
-    if(cadena === undefined) {
-        document.write(`<h2>Lista de Productos:</h2>`);
-    }else {
-        document.write(`<h2>Lista de Productos (${cadena}):</h2>`);
-    }
+  if (cadena === undefined) {
+    document.write(`<h2>Lista de Productos:</h2>`);
+  } else {
+    document.write(`<h2>Lista de Productos (${cadena}):</h2>`);
+  }
   document.write(`<ul>`);
   for (let i = 0; i < productosEnStock.length; i++) {
     document.write(
@@ -37,11 +37,9 @@ function mostrarProductos(cadena) {
   document.write(`</ul>`);
 }
 
-mostrarProductos();
-
 mostrarProductos("original");
 
-agregarProducto("Mayonesa",700);
+agregarProducto("Mayonesa", 700);
 
 mostrarProductos("con producto agregado mayonesa");
 
